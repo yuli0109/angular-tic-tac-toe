@@ -10,8 +10,8 @@
 <h1 ng-show="winner">Winner is {{-1* player}}</h1>
 <div>
   <div ng-repeat="row in cells track by $index">
-    <div class="nav nav-tabs">
-      <a ng-click="handleClick($parent.$index, $index)" ng-repeat="col in row track by $index">{{cells[$parent.$index][$index]}}</a>
+    <div class="row">
+      <a class="col-sm-1" ng-click="handleClick($parent.$index, $index)" ng-repeat="col in row track by $index">{{cells[$parent.$index][$index]}}</a>
     </div>
   </div>
 </div>
